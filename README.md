@@ -6,14 +6,6 @@ En este laboratorio vas a crear un presupuesto mensual de **5 USD**, etiquetar d
 
 ![Recorrido del presupuesto al apagado automático.](assets/consola-recorrido.png)
 
-| Bloque | Tiempo | Resultado |
-|---|---:|---|
-| Crear el Budget | 10 min | Avisos mensuales sobre un límite de 5 USD. |
-| Crear y etiquetar dos EC2 | 20 min | Una instancia programada y otra excluida. |
-| Crear la Lambda y sus permisos | 20 min | Una función que interpreta los tags de horario. |
-| Probar decisiones y automatizar | 25 min | Apagado, encendido y ejecución cada minuto. |
-| Observabilidad y limpieza | 15 min | Logs y cuenta limpia. |
-
 ## Qué vamos a construir
 
 - Un **AWS Budget** mensual de 5 USD para toda la cuenta.
@@ -57,8 +49,6 @@ La plantilla crea tres avisos:
 - gasto previsto al llegar al **100%**.
 
 **Qué observar:** el Budget queda en la lista y su alcance dice todos los servicios. No esperamos que llegue un correo durante la clase: crear el Budget no genera gasto y los datos de facturación no son instantáneos.
-
-**Idea clave:** un Budget pertenece al plano de observación. No invoca nuestra Lambda y no apaga EC2. [Documentación de AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/create-cost-budget.html).
 
 ## 2. Crear la EC2 programada
 
