@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen (herramienta integrada)",
+  "images": [
+    {
+      "file": "consola-recorrido.png",
+      "prompt": "Infografía técnica educativa en español, 16:9, fondo blanco, tipografía azul marino, acentos verdes, azules y ámbar. Título: Del presupuesto al apagado automático. Cuatro bloques: Budget avisa por correo y no dispara nada; tags en EC2 describen el horario y no ejecutan acciones; Lambda toma la decisión; EventBridge ejecuta cada minuto e invoca Lambda. Lambda ramifica a instancia programada y excluida. CloudWatch Logs registra cada decisión. Texto grande, flechas claras, sin párrafos ni logos inventados."
+    },
+    {
+      "file": "consola-budget.png",
+      "prompt": "Infografía educativa en español, 16:9. Título: Un Budget avisa; no limita el gasto. Flujo costo registrado, Budget mensual 5 USD, umbrales 85% real, 100% real y 100% previsto, correo al estudiante. Pie: la facturación puede demorarse y la alerta no apaga recursos. Tipografía grande, fondo blanco y estilo Formatec.",
+      "edit_note": "Se corrigió una primera versión que mostraba 80% y 100% para reflejar exactamente la plantilla simplificada actual de AWS."
+    },
+    {
+      "file": "consola-horarios.png",
+      "prompt": "Infografía técnica educativa en español, 16:9, fondo blanco y alta legibilidad. Título: Los tags son datos; la Lambda toma la decisión. Flujo EventBridge Scheduler cada minuto, Lambda lee hora y tags, compara si está dentro del horario y decide encender, detener o mantener. Tarjeta programada con AutoSchedule true, StartTime, StopTime y TimeZone; tarjeta excluida con AutoSchedule false. CloudWatch Logs registra decisiones."
+    }
+  ]
+}
